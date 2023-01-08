@@ -1,0 +1,9 @@
+<form method='POST' action='{{ accion }}'>
+
+  <label for="descripcion">Descripcion</label>
+  <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" value="{{ tarea.descripcion }}">
+  <small>Descripcion de la tarea a realizar</small>
+
+  <button type="submit">{{ etiqueta_btn_enviar|default('Guardar')}}</button>
+
+</form>

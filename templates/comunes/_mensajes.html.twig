@@ -1,0 +1,6 @@
+{% for type, messages in app.flashes %}
+  {% for message in messages %}
+    <input type="text" placeholder="{{ message }}" aria-invalid="{{ type }}">
+  {% endfor %}
+  
+{% endfor %}
